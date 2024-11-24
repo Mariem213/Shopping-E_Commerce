@@ -1,8 +1,54 @@
 // import React from 'react'
 import Logo from '../assets/logo.png'
 import { IoSearch } from "react-icons/io5";
-import { FaCartShopping } from "react-icons/fa6";
+import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import DarkMode from './DarkMode';
+
+const Menu = [
+    {
+        id: 1,
+        name: "Home",
+        link: "/#"
+    },
+    {
+        id: 2,
+        name: "Top Rated",
+        link: "/#"
+    },
+    {
+        id: 3,
+        name: "Kids Wear",
+        link: "/#"
+    },
+    {
+        id: 4,
+        name: "Mens Wear",
+        link: "/#"
+    },
+    {
+        id: 5,
+        name: "Electronics",
+        link: "/#"
+    },
+]
+
+const DropdownLists = [
+    {
+        id: 1,
+        name: "Tranding Products",
+        link: "/#"
+    },
+    {
+        id: 2,
+        name: "Best Selling",
+        link: "/#"
+    },
+    {
+        id: 3,
+        name: "Top Rated",
+        link: "/#"
+    }
+]
 
 const Navbar = () => {
     return (
@@ -44,7 +90,8 @@ const Navbar = () => {
                                     transition-all duration-300 
                                     rounded-full border border-gray-300
                                     px-2 py-1
-                                    focus:outline-none focus:border-1 focus:border-main_color'
+                                    focus:outline-none focus:border-1 focus:border-main_color
+                                    dark:border-gray-500 dark:bg-gray-800'
                             />
                             <IoSearch className='
                                     text-gray-500 
@@ -77,7 +124,7 @@ const Navbar = () => {
                             >Order</span> */}
 
                             {/* Cart Icon */}
-                            <FaCartShopping 
+                            <FaCartShopping
                                 className='
                                     text-xl text-white
                                     drop-shadow-sm
@@ -95,8 +142,63 @@ const Navbar = () => {
             </div>
 
             {/* Lower Navbar */}
-            <div>
-
+            <div className='flex justify-center'>
+                <ul className='sm:flex hidden items-center gap-4'>
+                    {
+                        Menu.map((data) => (
+                            <li key={data.id}>
+                                <a
+                                    href={data.link}
+                                    className=' 
+                                        inline-block px-4 
+                                        hover:text-main_color
+                                        duration-200'
+                                >{data.name}</a>
+                            </li>
+                        ))
+                    }
+                    {/* Dropdown Links */}
+                    <li className='group relative cursor-pointer'>
+                        <a
+                            href='#'
+                            className='flex items-center gap-[2px] py-2 hover:text-main_color'
+                        >
+                            Trending
+                            <span>
+                                <FaCaretDown
+                                    className='
+                                        transition-all duration-200
+                                        group-hover:rotate-180'
+                                />
+                            </span>
+                        </a>
+                        <div
+                            className='
+                                absolute z-[1000] w-[200px] p-2
+                                hidden group-hover:block
+                                rounded-md 
+                                bg-white text-black
+                                shadow-md'
+                        >
+                            <ul>
+                                {
+                                    DropdownLists.map((data) => (
+                                        <li key={data.id}>
+                                            <a
+                                                href={data.link}
+                                                className=' 
+                                                    inline-block p-2 w-full
+                                                    hover:bg-main_color/20
+                                                    duration-200
+                                                    rounded-md'
+                                            >{data.name}</a>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     )
