@@ -100,7 +100,7 @@ const Header = () => {
                                                 alt='Carousel Images'
                                                 className='
                                                     w-[300px] h-[300px] sm:h-[450px] sm:w-[450px]
-                                                    sm:scale-125 lg:scale-120
+                                                    sm:scale-125 lg:scale-120 md:scale-100
                                                     object-contain
                                                     mx-auto'
                                             />
