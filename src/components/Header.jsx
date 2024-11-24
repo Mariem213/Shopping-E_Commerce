@@ -84,7 +84,7 @@ const Header = () => {
                                             <button className='
                                                         bg-gradient-to-r from-main_color to-second_color
                                                         hover:scale-105 duration-200
-                                                        py-2 px-4 rounded-full
+                                                        py-2 px-4 rounded-full mx-2
                                                         text-white font-bold'
                                             >
                                                 Order Now
