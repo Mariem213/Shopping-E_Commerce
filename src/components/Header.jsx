@@ -78,9 +78,27 @@ const Header = () => {
                                             relative
                                             z-10'
                                     >
-                                        <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title} </h1>
-                                        <p className='text-sm'> {data.descption} </p>
-                                        <div>
+                                        <h1 
+                                            data-aos="zoom-out"
+                                            data-aos-once="true"
+                                            data-aos-duration="500"
+                                            className='text-5xl sm:text-6xl lg:text-7xl font-bold'
+                                        >   
+                                            {data.title} 
+                                        </h1>
+                                        <p 
+                                            data-aos="fade-up"
+                                            data-aos-duration="500"
+                                            data-aos-delay="100"
+                                            className='text-sm'
+                                        > 
+                                            {data.descption} 
+                                        </p>
+                                        <div
+                                            data-aos="fade-up"
+                                            data-aos-duration="500"
+                                            data-aos-delay="300"
+                                        >
                                             <button className='
                                                         bg-gradient-to-r from-main_color to-second_color
                                                         hover:scale-105 duration-200
@@ -94,7 +112,11 @@ const Header = () => {
 
                                     {/* Image Selection */}
                                     <div className='order-1 sm:order-2'>
-                                        <div className='relative z-10'>
+                                        <div 
+                                            data-aos="zoom-in"
+                                            data-aos-once="true"
+                                            className='relative z-10'
+                                        >
                                             <img
                                                 src={data.img}
                                                 alt='Carousel Images'
