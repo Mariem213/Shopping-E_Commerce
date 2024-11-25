@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from "./components/Navbar"
 import Header from './components/Header';
 import Products from './components/Products';
+import TopRated from './components/TopRated';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -22,6 +23,7 @@ const App = () => {
       <Navbar/>
       <Header />
       <Products />
+      <TopRated />
     </div>
   )
 }

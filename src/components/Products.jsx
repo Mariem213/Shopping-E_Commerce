@@ -19,7 +19,7 @@ const ProductData = [
         id: 2,
         img: Img2,
         title: "Women western",
-        rating: 5.0,
+        rating: 4.8,
         color: "Red",
         aosDelay: 0
     },
@@ -27,7 +27,7 @@ const ProductData = [
         id: 3,
         img: Img3,
         title: "Goggles",
-        rating: 5.0,
+        rating: 4.5,
         color: "Brown",
         aosDelay: 0
     },
@@ -35,7 +35,7 @@ const ProductData = [
         id: 4,
         img: Img4,
         title: "Printed T-Shirt",
-        rating: 5.0,
+        rating: 3.2,
         color: "Yellow",
         aosDelay: 0
     },
@@ -43,7 +43,7 @@ const ProductData = [
         id: 5,
         img: Img5,
         title: "Fashin T-Shirt",
-        rating: 5.0,
+        rating: 3.9,
         color: "Pink",
         aosDelay: 0
     }
@@ -79,7 +79,7 @@ const Products = () => {
                                         className='
                                             h-[220px] w-[150px]
                                             object-cover rounded-md
-                                            '
+                                        '
                                     />
                                     <div>
                                         <h3 className='font-semibold'>{data.title}</h3>
@@ -92,6 +92,23 @@ const Products = () => {
                                 </div>
                             ))
                         }
+                    </div>
+
+                    <div 
+                        data-aos="fade-up" 
+                        className='
+                            flex items-center justify-center
+                            mt-10 mb-10'
+                    >
+                        <button 
+                            className='
+                            bg-main_color text-white hover:bg-second_color
+                            font-bold
+                            rounded-md 
+                            px-5 py-2'
+                        >
+                            View All Products
+                        </button>
                     </div>
                 </div>
             </div>
