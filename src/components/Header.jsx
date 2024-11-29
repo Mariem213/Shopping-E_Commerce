@@ -47,7 +47,8 @@ const Header = () => {
                 bg-gray-100
                 flex justify-center items-center
                 dark:bg-gray-950 dark:text-white
-                duration-200 '
+                duration-200
+            '
         >
             {/* Backgroung Pattern */}
             <div className='
@@ -55,7 +56,8 @@ const Header = () => {
                     bg-main_color/40
                     absolute -top-1/2 right-0
                     rounded-3xl rotate-45
-                    -z-9'
+                    -z-9
+                '
             >
             </div>
 

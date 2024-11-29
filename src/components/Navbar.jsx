@@ -57,7 +57,8 @@ const Navbar = () => {
                 bg-white 
                 dark:bg-gray-900 dark:text-white
                 duration-200
-                relative z-40
+                z-40
+                relative
             '>
             {/* Upper Navbar */}
             <div className='bg-main_color/40 py-2'>
@@ -142,6 +143,7 @@ const Navbar = () => {
             </div>
 
             {/* Lower Navbar */}
+            {/* <div className='flex justify-center fixed w-full bg-white dark:bg-gray-900'> */}
             <div className='flex justify-center'>
                 <ul className='sm:flex hidden items-center gap-4'>
                     {

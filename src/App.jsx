@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Products from './components/Products';
 import TopRated from './components/TopRated';
 import Sales from './components/Sales';
+import NewProduct from './components/NewProduct';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -26,6 +27,7 @@ const App = () => {
       <Products />
       <TopRated />
       <Sales />
+      <NewProduct />
     </div>
   )
 }
