@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Header from './components/Header';
 import Products from './components/Products';
 import TopRated from './components/TopRated';
+import Sales from './components/Sales';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -24,6 +25,7 @@ const App = () => {
       <Header />
       <Products />
       <TopRated />
+      <Sales />
     </div>
   )
 }
