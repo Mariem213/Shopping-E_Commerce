@@ -21,7 +21,7 @@ const ProductData = [
         title: "Women western",
         rating: 4.8,
         color: "Red",
-        aosDelay: 0
+        aosDelay: 200
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const ProductData = [
         title: "Goggles",
         rating: 4.5,
         color: "Brown",
-        aosDelay: 0
+        aosDelay: 400
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const ProductData = [
         title: "Printed T-Shirt",
         rating: 3.2,
         color: "Yellow",
-        aosDelay: 0
+        aosDelay: 600
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ const ProductData = [
         title: "Fashin T-Shirt",
         rating: 3.9,
         color: "Pink",
-        aosDelay: 0
+        aosDelay: 800
     }
 ]
 
@@ -105,7 +105,7 @@ const Products = () => {
                             bg-main_color text-white hover:bg-second_color
                             font-bold
                             rounded-md 
-                            px-5 py-2'
+                            px-5 py-2 mb-10'
                         >
                             View All Products
                         </button>
