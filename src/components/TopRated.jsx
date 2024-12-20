@@ -25,7 +25,7 @@ const TopRatedProduct = [
     }
 ]
 
-const TopRated = () => {
+const TopRated = ( { handleOrderPopup }) => {
     return (
         <div className="mt-14 mb-12">
             <div className="container">
@@ -97,7 +97,7 @@ const TopRated = () => {
                                                     py-1 px-4 mt-4
                                                     rounded-full
                                                 '
-                                                // onClick={handleOrderPopup}
+                                                onClick={handleOrderPopup}
                                         >
                                             Order Now
                                         </button>

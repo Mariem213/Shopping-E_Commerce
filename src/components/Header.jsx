@@ -25,7 +25,7 @@ const ImageList = [
     },
 ]
 
-const Header = () => {
+const Header = ( { handleOrderPopup } ) => {
 
     var settings = {
         dots: false,
@@ -101,11 +101,13 @@ const Header = () => {
                                             data-aos-duration="500"
                                             data-aos-delay="300"
                                         >
-                                            <button className='
+                                            <button 
+                                                    className='
                                                         bg-gradient-to-r from-main_color to-second_color
                                                         hover:scale-105 duration-200
                                                         py-2 px-4 rounded-full mx-2
                                                         text-white font-bold'
+                                                    onClick={handleOrderPopup}
                                             >
                                                 Order Now
                                             </button>

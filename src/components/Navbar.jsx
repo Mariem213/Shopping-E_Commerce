@@ -50,7 +50,7 @@ const DropdownLists = [
     }
 ]
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
     return (
         <div className='
                 shadow-md 
@@ -105,7 +105,8 @@ const Navbar = () => {
                         </div>
                         {/* Order Button */}
                         <button
-                            onClick={() => alert("Hellooo")}
+                            // onClick={() => alert("Hellooo")}
+                            onClick={() => handleOrderPopup()}
                             title='Order'
                             className='
                                 bg-gradient-to-r from-main_color to-second_color
@@ -144,7 +145,10 @@ const Navbar = () => {
 
             {/* Lower Navbar */}
             {/* <div className='flex justify-center fixed w-full bg-white dark:bg-gray-900'> */}
-            <div className='flex justify-center'>
+            <div 
+                className='flex justify-center'
+                data-aos= "zoom-in"
+            >
                 <ul className='sm:flex hidden items-center gap-4'>
                     {
                         Menu.map((data) => (
@@ -179,7 +183,8 @@ const Navbar = () => {
                                 absolute z-[1000] w-[200px] p-2
                                 hidden group-hover:block
                                 rounded-md 
-                                bg-white text-black
+                                bg-white text-black 
+                                dark:bg-gray-800 dark:text-white
                                 shadow-md'
                         >
                             <ul>
